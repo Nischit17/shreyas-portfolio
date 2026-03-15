@@ -1,59 +1,47 @@
 "use client";
 
 import Reveal from "../animations/Reveal";
-import TiltCard from "../ui/TiltCard";
-import { Brain, LineChart, Cpu, Globe2 } from "lucide-react";
+import { Brain, Search, Lightbulb, Presentation, TrendingUp, Workflow, BarChart3, Mic, Users } from "lucide-react";
 
-export default function WhatIWorkOn() {
-  const features = [
-    {
-      icon: <Brain className="w-8 h-8 text-primary" />,
-      title: "AI Product Commercialization",
-      description: "Supporting early-stage AI platforms in translating technical capability into enterprise value."
-    },
-    {
-      icon: <LineChart className="w-8 h-8 text-secondary" />,
-      title: "Enterprise Technology Strategy",
-      description: "Positioning complex technology solutions for enterprise adoption and scaling."
-    },
-    {
-      icon: <Cpu className="w-8 h-8 text-blue-400" />,
-      title: "AI & Intelligent Systems",
-      description: "Generative AI, Agentic AI Systems, Decision Intelligence Platforms, and AI-driven analytics."
-    },
-    {
-      icon: <Globe2 className="w-8 h-8 text-purple-400" />,
-      title: "Technology Partnerships",
-      description: "Collaborating with technology providers and enterprise stakeholders globally."
-    }
-  ];
+const skillsData = [
+  { title: "AI & Generative AI Solutions", icon: <Brain className="w-6 h-6" />, color: "text-blue-400" },
+  { title: "Enterprise Discovery", icon: <Search className="w-6 h-6" />, color: "text-purple-400" },
+  { title: "Solution Consulting", icon: <Lightbulb className="w-6 h-6" />, color: "text-amber-400" },
+  { title: "Technical Product Demos", icon: <Presentation className="w-6 h-6" />, color: "text-emerald-400" },
+  { title: "Business Development", icon: <TrendingUp className="w-6 h-6" />, color: "text-indigo-400" },
+  { title: "CRM Automation", icon: <Workflow className="w-6 h-6" />, color: "text-rose-400" },
+  { title: "Sales Pipeline Management", icon: <BarChart3 className="w-6 h-6" />, color: "text-cyan-400" },
+  { title: "AI Voice Agents", icon: <Mic className="w-6 h-6" />, color: "text-violet-400" },
+  { title: "Client Relationship Building", icon: <Users className="w-6 h-6" />, color: "text-fuchsia-400" }
+];
 
+export default function Skills() {
   return (
-    <section id="platforms" className="py-32 relative">
+    <section id="skills" className="py-32 relative bg-white/[0.02] border-y border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal>
-          <div className="text-center mb-20">
-            <h2 className="text-sm font-mono tracking-[0.2em] text-primary uppercase mb-4">Focus Areas</h2>
-            <h3 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">What I Work On</h3>
+          <div className="text-center mb-24">
+            <h2 className="text-sm font-mono tracking-[0.2em] text-primary uppercase mb-4">Expertise</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight">Core Competencies</h3>
           </div>
         </Reveal>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {features.map((feature, i) => (
-            <Reveal key={feature.title} delay={0.2 + i * 0.1}>
-              <TiltCard className="h-full flex flex-col justify-between group">
-                <div className="p-4 rounded-xl bg-white/5 w-fit mb-8 group-hover:scale-110 transition-transform">
-                  {feature.icon}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skillsData.map((skill, i) => (
+            <Reveal key={skill.title} delay={0.1 * i}>
+              <div className="group relative glass-card p-8 rounded-2xl border border-white/10 hover:border-white/30 transition-all overflow-hidden flex flex-col items-center justify-center text-center h-full hover:-translate-y-1">
+                
+                {/* Background Sweep */}
+                <div className="absolute inset-0 bg-gradient-to-t from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className={`mb-6 p-4 rounded-xl bg-white/5 border border-white/10 group-hover:scale-110 transition-transform duration-500 ${skill.color}`}>
+                  {skill.icon}
                 </div>
-                <div>
-                  <h4 className="text-2xl font-semibold mb-4 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-400 transition-all">
-                    {feature.title}
-                  </h4>
-                  <p className="text-gray-400 text-lg leading-relaxed">
-                    {feature.description}
-                  </p>
-                </div>
-              </TiltCard>
+                
+                <h4 className="text-lg md:text-xl font-medium text-gray-300 group-hover:text-white transition-colors duration-300">
+                  {skill.title}
+                </h4>
+              </div>
             </Reveal>
           ))}
         </div>

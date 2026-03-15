@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="relative z-10 text-center max-w-4xl px-6 w-full mt-20">
         <Reveal>
           <h2 className="text-secondary font-mono tracking-widest text-xs md:text-sm uppercase mb-8">
-            AI Business & Technology Strategist
+            AI & Generative AI Solutions | Business Development | Enterprise Discovery
           </h2>
         </Reveal>
         
@@ -24,14 +24,25 @@ export default function Hero() {
         
         <Reveal delay={0.4}>
           <p className="text-lg md:text-2xl text-gray-300 mb-6 max-w-2xl mx-auto leading-relaxed font-light">
-            Building revenue engines for AI products, enterprise software, and intelligent platforms.
+            I help startups and enterprises adopt AI, automation, and data-driven systems by driving discovery, solution consulting, and global deal cycles.
           </p>
         </Reveal>
         
         <Reveal delay={0.5}>
           <p className="text-sm md:text-base text-gray-500 max-w-xl mx-auto">
-            Translating complex technical capabilities into scalable commercial success for global organizations.
+            Experience working with AI voice agents, CRM automation, enterprise demos, and international sales pipelines.
           </p>
+        </Reveal>
+
+        <Reveal delay={0.6}>
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+            <a href="#work" className="px-8 py-3 rounded-full bg-primary text-white font-medium hover:bg-primary/90 transition-colors">
+              View Case Studies
+            </a>
+            <a href="#contact" className="px-8 py-3 rounded-full border border-white/20 text-white font-medium hover:bg-white/10 transition-colors">
+              Contact Me
+            </a>
+          </div>
         </Reveal>
 
         {/* Minimalist divider */}

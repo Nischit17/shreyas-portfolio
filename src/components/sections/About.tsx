@@ -83,36 +83,43 @@ export default function About() {
             {/* Right side: Content */}
             <div className="space-y-8">
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-                I operate where technology strategy meets <span className="text-gradient">business execution.</span>
+                I work at the intersection of <span className="text-gradient">AI technology and business growth.</span>
               </h2>
               
               <div className="space-y-6 text-xl text-gray-400 leading-relaxed">
                 <p>
-                  My work focuses on helping AI products, enterprise platforms, and technology services reach the market with clarity, structure, and commercial momentum.
+                  My focus is helping companies understand how AI, automation, and modern software solutions can solve real operational problems.
                 </p>
                 
                 <p>
-                  Across multiple organizations I have worked closely with founders, CTOs, product leaders, and enterprise stakeholders to:
+                  I specialize in:
                 </p>
                 
                 <ul className="space-y-4 text-gray-300">
-                  <li className="flex items-center gap-4">
+                   <li className="flex items-center gap-4">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    Shape product positioning
+                    Enterprise discovery and solution consulting
                   </li>
                   <li className="flex items-center gap-4">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    Structure enterprise use cases
+                    AI & Generative AI solution positioning
                   </li>
                   <li className="flex items-center gap-4">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    Translate technical capabilities into business value
+                    Client demos and technical storytelling
                   </li>
                   <li className="flex items-center gap-4">
                     <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-                    Drive adoption within global markets
+                    Building international sales pipelines
+                  </li>
+                  <li className="flex items-center gap-4">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                    Helping startups translate complex technology into business value
                   </li>
                 </ul>
+                <p className="text-lg">
+                  I enjoy working with fast-growing tech startups and AI companies that are solving real-world problems.
+                </p>
               </div>
 
               {/* Metric Card */}

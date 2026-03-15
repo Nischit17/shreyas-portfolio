@@ -4,30 +4,32 @@ import Reveal from "../animations/Reveal";
 
 const capabilitiesData = [
   {
-    category: "AI & Intelligent Systems",
+    category: "AI & Generative AI Solutions",
+    description: "Helping organizations implement AI solutions such as:",
     items: [
-      "Generative AI",
-      "Agentic AI",
-      "Decision Intelligence",
-      "AI Product Strategy"
+      "AI voice agents",
+      "Conversational AI systems",
+      "AI-powered automation",
+      "Data visualization platforms"
     ]
   },
   {
-    category: "Enterprise Technology",
+    category: "Enterprise Discovery & Demos",
+    description: "I conduct discovery calls with international clients to:",
     items: [
-      "Enterprise Software",
-      "Platform Solutions",
-      "Technology Partnerships",
-      "Global Market Development"
+      "Identify business challenges",
+      "Map AI capabilities to business problems",
+      "Demonstrate product value through live demos"
     ]
   },
   {
-    category: "Execution",
+    category: "Global Business Development",
+    description: "Experience working with US, UK, and European clients, managing the early stages of enterprise deal cycles including:",
     items: [
-      "Stakeholder Alignment",
-      "Complex Solution Positioning",
-      "Enterprise Adoption Strategy",
-      "Technology Commercialization"
+      "Outbound outreach",
+      "Discovery meetings",
+      "Solution presentations",
+      "Proposal alignment"
     ]
   }
 ];
@@ -53,6 +55,12 @@ export default function Capabilities() {
                     {section.category}
                   </h4>
                 </div>
+                
+                {section.description && (
+                  <p className="text-gray-400 text-lg">
+                    {section.description}
+                  </p>
+                )}
                 
                 <ul className="space-y-4">
                   {section.items.map((item) => (

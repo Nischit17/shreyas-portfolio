@@ -28,7 +28,7 @@ export default function Contact() {
           <Reveal delay={0.2}>
             <div className="space-y-12">
               <p className="text-xl text-gray-400 max-w-lg leading-relaxed">
-                Available for enterprise consulting, strategic advisory, and collaborative technology ventures across global markets.
+                If you&apos;re building something interesting in AI, automation, or data platforms, I&apos;d love to connect.
               </p>
               
               <div className="space-y-8">

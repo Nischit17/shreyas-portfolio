@@ -4,23 +4,29 @@ import Reveal from "../animations/Reveal";
 
 const projects = [
   {
-    title: "Agentic AI Decision Platform",
-    category: "Enterprise AI",
-    description: "Enterprise platform designed for decision intelligence and multi-agent collaboration, automating complex strategic workflows.",
+    title: "AI Voice Agent Automation",
+    category: "Scale & Efficiency",
+    challenge: "Client required a system to automate outbound calls at scale.",
+    solution: "Implemented an AI voice agent integrated with CRM workflows.",
+    impact: "Automated hundreds of calls daily while maintaining conversation quality.",
     gradient: "from-blue-500/20 to-cyan-500/20",
     border: "border-blue-500/30",
   },
   {
-    title: "Sales Insight Copilot",
-    category: "AI Analytics",
-    description: "AI platform transforming dense business reporting into interactive, conversational insights for rapid enterprise decision-making.",
+    title: "CRM + AI Workflow Automation",
+    category: "Sales Operations",
+    challenge: "Manual follow-ups and lead management were slowing down sales operations.",
+    solution: "Connected AI automation with CRM pipelines to streamline workflows.",
+    impact: "Reduced manual effort and improved response times for prospects.",
     gradient: "from-purple-500/20 to-pink-500/20",
     border: "border-purple-500/30",
   },
   {
-    title: "AI Policy Monitoring",
-    category: "Healthcare Technology",
-    description: "Healthcare AI decision intelligence platform enabling real-time policy monitoring and significantly faster pre-authorization decisions.",
+    title: "Enterprise AI Product Demos",
+    category: "Client Engagement",
+    challenge: "Potential enterprise clients required technical clarity before adopting AI solutions.",
+    solution: "Led discovery sessions and delivered product demos explaining real-world use cases.",
+    impact: "Improved client understanding and accelerated sales conversations.",
     gradient: "from-emerald-500/20 to-teal-500/20",
     border: "border-emerald-500/30",
   }
@@ -56,9 +62,21 @@ export default function FeaturedWork() {
                     <h4 className="text-3xl md:text-5xl font-bold text-white mb-6 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-300 transition-all">
                       {project.title}
                     </h4>
-                    <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-3xl">
-                      {project.description}
-                    </p>
+                    
+                    <div className="space-y-6 max-w-3xl">
+                      <div>
+                        <div className="text-white font-medium mb-1">Challenge</div>
+                        <p className="text-lg text-gray-400 leading-relaxed">{project.challenge}</p>
+                      </div>
+                      <div>
+                        <div className="text-white font-medium mb-1">Solution</div>
+                        <p className="text-lg text-gray-400 leading-relaxed">{project.solution}</p>
+                      </div>
+                      <div>
+                        <div className="text-secondary font-medium mb-1">Impact</div>
+                        <p className="text-lg text-gray-300 leading-relaxed">{project.impact}</p>
+                      </div>
+                    </div>
                   </div>
                   
                 </div>
