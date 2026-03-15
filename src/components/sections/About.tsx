@@ -81,8 +81,8 @@ export default function About() {
             </div>
 
             {/* Right side: Content */}
-            <div className="space-y-8">
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <div className="space-y-6 md:space-y-8">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
                 I work at the intersection of <span className="text-gradient">AI technology and business growth.</span>
               </h2>
               
@@ -123,8 +123,8 @@ export default function About() {
               </div>
 
               {/* Metric Card */}
-              <div className="mt-12 glass-card p-8 border-primary/20 bg-primary/5">
-                <div className="text-5xl md:text-6xl font-black text-white mb-2 tracking-tighter">
+              <div className="mt-10 md:mt-12 glass-card p-6 md:p-8 border-primary/20 bg-primary/5">
+                <div className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-2 tracking-tighter">
                   $<AnimatedCounter value={250} />K<span className="text-primary">+</span>
                 </div>
                 <div className="text-sm font-mono tracking-widest uppercase text-gray-400">

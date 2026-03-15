@@ -37,9 +37,9 @@ export default function FeaturedWork() {
     <section id="work" className="py-32 relative">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal>
-          <div className="mb-20 text-center md:text-left">
+          <div className="mb-16 md:mb-20 text-center md:text-left">
             <h2 className="text-sm font-mono tracking-[0.2em] text-primary uppercase mb-4">Case Studies</h2>
-            <h3 className="text-4xl md:text-6xl font-bold tracking-tight max-w-2xl">
+            <h3 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight max-w-2xl">
               Featured Work & Platforms
             </h3>
           </div>
@@ -53,13 +53,13 @@ export default function FeaturedWork() {
                 {/* Hover Gradient Effect */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none`} />
                 
-                <div className="relative z-10 p-8 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+                <div className="relative z-10 p-6 md:p-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
                   
                   <div className="w-full">
-                    <div className="text-sm font-mono tracking-widest text-gray-400 mb-4 uppercase">
+                    <div className="text-[10px] sm:text-xs md:text-sm font-mono tracking-widest text-gray-400 mb-3 md:mb-4 uppercase">
                       {project.category}
                     </div>
-                    <h4 className="text-3xl md:text-5xl font-bold text-white mb-6 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-300 transition-all">
+                    <h4 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-6 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-300 transition-all">
                       {project.title}
                     </h4>
                     

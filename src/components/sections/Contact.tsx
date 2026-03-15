@@ -32,49 +32,49 @@ export default function Contact() {
               </p>
               
               <div className="space-y-8">
-                <div className="group flex items-center gap-6">
-                  <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                    <Mail className="w-6 h-6 text-primary" />
+                <div className="group flex items-start sm:items-center gap-4 md:gap-6">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Mail className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
-                  <div className="flex-grow">
-                    <div className="text-sm text-gray-500 mb-1 font-mono uppercase">Email</div>
-                    <div className="text-xl font-medium interactive">Sunshine.shreyu@ymail.com</div>
+                  <div className="flex-grow min-w-0">
+                    <div className="text-xs md:text-sm text-gray-500 mb-1 font-mono uppercase">Email</div>
+                    <div className="text-base sm:text-lg md:text-xl font-medium interactive break-all">Sunshine.shreyu@ymail.com</div>
                   </div>
                   <button onClick={() => handleCopy("Sunshine.shreyu@ymail.com", "email")} className="p-2 hover:bg-white/10 rounded-lg transition-colors">
                     <Copy className={`w-5 h-5 ${copied === "email" ? "text-green-400" : "text-gray-400"}`} />
                   </button>
                 </div>
 
-                <div className="group flex items-center gap-6">
-                  <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                    <Phone className="w-6 h-6 text-primary" />
+                <div className="group flex items-start sm:items-center gap-4 md:gap-6">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Phone className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
-                  <div className="flex-grow">
-                    <div className="text-sm text-gray-500 mb-1 font-mono uppercase">Phone</div>
-                    <div className="text-xl font-medium interactive">+91 9513883088</div>
+                  <div className="flex-grow min-w-0">
+                    <div className="text-xs md:text-sm text-gray-500 mb-1 font-mono uppercase">Phone</div>
+                    <div className="text-base sm:text-lg md:text-xl font-medium interactive">+91 9513883088</div>
                   </div>
                   <button onClick={() => handleCopy("+91 9513883088", "phone")} className="p-2 hover:bg-white/10 rounded-lg transition-colors">
                     <Copy className={`w-5 h-5 ${copied === "phone" ? "text-green-400" : "text-gray-400"}`} />
                   </button>
                 </div>
 
-                <div className="group flex items-center gap-6">
-                  <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                    <MapPin className="w-6 h-6 text-primary" />
+                <div className="group flex items-start sm:items-center gap-4 md:gap-6">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
-                  <div className="flex-grow">
-                    <div className="text-sm text-gray-500 mb-1 font-mono uppercase">Location</div>
-                    <div className="text-xl font-medium">Bengaluru, India</div>
+                  <div className="flex-grow min-w-0">
+                    <div className="text-xs md:text-sm text-gray-500 mb-1 font-mono uppercase">Location</div>
+                    <div className="text-base sm:text-lg md:text-xl font-medium">Bengaluru, India</div>
                   </div>
                 </div>
 
-                <div className="group flex items-center gap-6">
-                  <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                    <ExternalLink className="w-6 h-6 text-primary" />
+                <div className="group flex items-start sm:items-center gap-4 md:gap-6">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <ExternalLink className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
-                  <div className="flex-grow">
-                    <div className="text-sm text-gray-500 mb-1 font-mono uppercase">LinkedIn</div>
-                    <a href="https://linkedin.com/in/shreyas-sk-b748191a0" target="_blank" rel="noopener noreferrer" className="text-xl font-medium hover:text-primary transition-colors interactive">
+                  <div className="flex-grow min-w-0">
+                    <div className="text-xs md:text-sm text-gray-500 mb-1 font-mono uppercase">LinkedIn</div>
+                    <a href="https://linkedin.com/in/shreyas-sk-b748191a0" target="_blank" rel="noopener noreferrer" className="text-base sm:text-lg md:text-xl font-medium hover:text-primary transition-colors interactive break-all">
                       linkedin.com/in/shreyas-sk
                     </a>
                   </div>
@@ -84,7 +84,7 @@ export default function Contact() {
           </Reveal>
 
           <Reveal delay={0.4}>
-            <form action="https://formspree.io/f/xqaznnzp" method="POST" className="glass-card p-8 md:p-12 space-y-6">
+            <form action="https://formspree.io/f/xqaznnzp" method="POST" className="glass-card p-6 md:p-12 space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-mono text-gray-400 uppercase">Name</label>

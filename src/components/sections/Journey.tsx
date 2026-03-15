@@ -66,9 +66,9 @@ export default function Journey() {
                   <div className="absolute left-[24px] md:left-[50%] w-4 h-4 rounded-full bg-background border-2 border-primary -translate-x-1/2 z-10" />
 
                   {/* Left Content */}
-                  <div className={`w-full md:w-[45%] pl-16 md:pl-0 ${isEven ? "md:pr-16 md:text-right" : "md:order-2 md:pl-16 md:text-left"}`}>
+                  <div className={`w-full md:w-[45%] pl-14 md:pl-0 ${isEven ? "md:pr-16 md:text-right" : "md:order-2 md:pl-16 md:text-left"}`}>
                     <Reveal delay={0.2}>
-                      <div className={`glass-card p-8 hover:bg-white/10 transition-colors ${!isEven ? "" : "md:items-end flex flex-col"}`}>
+                      <div className={`glass-card p-6 md:p-8 hover:bg-white/10 transition-colors ${!isEven ? "" : "md:items-end flex flex-col"}`}>
                         <h4 className="text-2xl font-bold text-white mb-2">{item.company}</h4>
                         <div className="text-primary font-mono text-sm mb-4">{item.role}</div>
                         <p className="text-gray-400 mb-6 leading-relaxed">
