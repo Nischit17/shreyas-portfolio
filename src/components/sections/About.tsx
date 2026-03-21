@@ -1,35 +1,7 @@
 "use client";
 
 import Reveal from "../animations/Reveal";
-import { useInView, motion } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
-
-function AnimatedCounter({ value }: { value: number }) {
-  const [count, setCount] = useState(0);
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  useEffect(() => {
-    if (isInView) {
-      let start = 0;
-      const end = value;
-      const duration = 2000;
-      const incrementTime = Math.abs(Math.floor(duration / end) || 1);
-
-      const timer = setInterval(() => {
-        start += 5;
-        if (start > end) {
-          setCount(end);
-          clearInterval(timer);
-        } else {
-          setCount(start);
-        }
-      }, incrementTime);
-    }
-  }, [isInView, value]);
-
-  return <span ref={ref}>{count}</span>;
-}
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
